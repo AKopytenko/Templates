@@ -1,0 +1,131 @@
+@import '_variables.less';
+@import '_fonts.less';
+
+.article {
+
+	&-header {
+
+		a {
+			text-decoration: none;
+			color: @black;
+			display: block;
+		}
+
+		&_h1 {
+			font: @h1;
+			display: block;
+			margin: 0 0 15px;
+
+			a {
+				font: @h1;
+
+				@media (max-width: 991px) {
+					font: @h1_md;
+				}
+
+				@media (max-width: 576px) {
+					font: @h1_sm;
+				}
+			}
+		}
+
+		&_h2 {
+			font: @h2;
+
+			a {
+				font: @h2;
+
+				@media (max-width: 991px) {
+					font: @h2_md;
+				}
+
+				@media (max-width: 576px) {
+					font: @h2_sm;
+				}
+			}
+		}
+		
+		&_h3 {
+			font: @h3;
+
+			a {
+				font: @h3;
+
+				@media (max-width: 991px) {
+					font: @h3_md;
+				}
+
+				@media (max-width: 576px) {
+					font: @h3_sm;
+				}
+			}
+		}
+
+		&_h5 {
+			font: @h5;
+
+			a {
+				font: @h5;
+
+				@media (max-width: 991px) {
+					font: @h5_md;
+				}
+
+				@media (max-width: 576px) {
+					font: @h5_sm;
+				}
+			}
+		}
+
+		&_h6 {
+			font: @h6;
+
+			a {
+				font: @h6;
+			}
+		}
+	}
+
+	&-info {
+		margin: 15px 0;
+		font-size: 11px;
+		line-height: 18px;
+		color: @gray;
+
+		a {
+			text-decoration: none;
+			color: @gray;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		&_inline {
+			line-height: 11px;
+		}
+
+		&-rubric {
+			color: @blue;
+			text-transform: uppercase;
+			margin: 0 10px 0 0;
+			display: block;
+
+			a {
+				color: @blue;
+			}
+		}
+
+		&_inline & {
+
+			&-rubric {
+				display: inline;
+			}
+
+		}
+
+		&-author {
+			margin: 0 10px 0 0;
+		}
+	}
+}
