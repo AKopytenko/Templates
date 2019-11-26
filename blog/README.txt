@@ -26,5 +26,5 @@ $ gulp copyLibJs
 Копировать шрифты
 $ gulp copyFonts
 
-КОпировать картинки
+Копировать картинки
 $ gulp copyImages
