@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #1f262e;
+    font: 400 16px/24px Arial,Helvetica,sans-serif;
+    color:#333;
+}
+
+.widgetPoll_twoVars {
+    width: 600px;
+    margin: 50px auto;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.poll {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pollStepHidden {
+    display: none;
+}
+
+.pollTitle {
+    width: 100%;
+    font-size: 28px;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.pollAnswers {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+}
+
+.pollAnswer {
+    width: 48%;
+    margin: 0 1%;
+}
+
+.pollAnswer-left {
+    text-align: right;
+}
+
+.pollAnswerTitle {
+    font-size: 15px;
+}
+
+.pollAnswerResult {
+    background: #b7d5f8;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+}
+
+.pollAnswerResultProgress {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background:#37597f;
+    max-width: 100%;
+    top: 0;
+    transition: width .5s;
+}
+
+.pollAnswer-left .pollAnswerResultProgress {
+    right: 0;
+}
+
+.pollAnswer-right .pollAnswerResultProgress {
+    left: 0;
+}
+
+.pollAnswerResultPerc {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    background: #f0f0f0;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+}

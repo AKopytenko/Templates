@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опрос с анимацией</title>
+    <link rel="stylesheet" href="styles/libs/eric-reset.css">
+    <link rel="stylesheet" href="styles/poll.css">
+</head>
+<body>
+
+<div class="widgetPoll_twoVars poll">
+    <div class="pollTitle">Сколько времени?</div>
+    <div class="pollAnswers">
+        <div class="pollAnswer pollAnswer-left">
+            <div class="pollAnswerTitle">Красный</div>
+            <div class="pollAnswerResult">
+                <div class="pollAnswerResultPerc"><span>40</span>%</div>
+                <div class="pollAnswerResultProgress" style="width: 40%"></div>
+            </div>
+        </div>
+        <div class="pollAnswer pollAnswer-right">
+            <div class="pollAnswerTitle">Вчера</div>
+            <div class="pollAnswerResult">
+                <div class="pollAnswerResultPerc"><span>60</span>%</div>
+                <div class="pollAnswerResultProgress" style="width: 60%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="pollFeedback pollStepHidden">
+        <form class="pollFeedbackForm">
+            <legend class="">Оставь свой e-mail и узнай итоги опроса!</legend>
+            <label for="pollFeedbackEmail" class="pollFeedback">
+                <input type="email" placeholder="name@domen.zone" id="pollFeedbackEmail" class="pollFeedbackEmail">
+            </label>
+            <button class="pollFeedbackSubmit">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="scripts/libs/jquery-3.4.1.min.js"></script>
+<script src="scripts/poll.js"></script>
+    
+</body>
+</html>
