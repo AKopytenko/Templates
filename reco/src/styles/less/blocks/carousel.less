@@ -1,0 +1,155 @@
+:root .carouselMainpage {
+
+    &__control {
+        position: absolute;
+        z-index: 1;
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__prev,
+    &__next {
+        width: 15px;
+        height: 30px;
+        display: inline-block;
+        position: relative;
+
+        & > .carousel-control-next-icon {
+            background: none;
+        }
+    }
+
+    &__prev {
+        background: url('../images/icons/icon-arrow-big-left.png') no-repeat 0 0;
+    }
+
+    &__next {
+        background: url('../images/icons/icon-arrow-big-right.png') no-repeat 0 0;
+    }
+
+    &__indicators {
+        position: static;
+        z-index: 15;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__indicator {
+        height: 16px;
+        width: 16px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: none;
+        border: 1.5px solid #fff;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &.active {
+            background-color: @bg-green;
+            border-color: @bg-green;
+        }
+    }
+    
+    &__item {
+        
+        &Image {
+            height: 60vh;
+            min-height: 400px;
+            background-position: center left;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media (max-width: 575px) {
+                min-height: 300px;
+            }
+        }
+
+        &Content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &Header {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 40px;
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 48px;
+                margin-bottom: 35px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &Text {
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 65px;
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 32px;
+                line-height: 42px;
+                margin-bottom: 45px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 21px;
+                line-height: 26px;
+                margin-bottom: 25px;
+            }
+        }
+
+        &Link {
+            background: @bg-green;
+            color: #fff;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 18px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            width: 260px;
+            display: block;
+            box-sizing: border-box;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: lighten(@bg-green, 2%);
+                text-decoration: none;
+                color: #fff;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 18px;
+                line-height: 18px;
+                padding: 14px 40px;
+                display: inline-block;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 14px;
+                line-height: 14px;
+                padding: 10px 20px;
+                display: inline-block;
+                width: auto;
+            }
+        }
+    }
+}

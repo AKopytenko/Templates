@@ -1,0 +1,161 @@
+.header {
+    padding: 45px 0 15px;
+
+    &__logo {
+        order: 1;
+
+        @media (min-width: 768px) and (max-width: 1140px) {
+            width: 25%;
+        }
+
+        @media (max-width: 767px) {
+            width: 50%;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            text-align: right;
+            padding: 0 15px 0 0;
+        }
+
+        @media (max-width: 575px) { 
+            padding: 0 10px 0 0;
+
+            &Img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__slogan {
+        order: 2;
+        text-align: center;
+        font: 600 17px/1 'BaseFont', sans-serif;
+
+        &Main {
+            display: block;
+            text-transform: uppercase;
+            color: @text-green;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        @media (min-width: 768px) and (max-width: 1140px) {
+            width: 30%;
+        }
+
+        @media (max-width: 767px) {
+            width: 50%;
+            text-align: right;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            text-align: left;
+            padding: 0 0 0 15px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 3vw;
+
+            &Main {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    &__contact {
+        font: 400 17px/1 'BaseFont', sans-serif;
+
+        &Phone {
+            display: block;
+            font-size: 24px;
+            white-space: nowrap;
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 16px;
+            }
+        }
+        
+        &Link {
+            font-size: 15px;
+            color: #8E9AA1;
+        }
+
+        &_left {
+            order: 3;
+
+            @media (min-width: 768px) and (max-width: 1140px) {
+                order: 4;
+                width: 50%;
+                margin: 30px 0 0;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                text-align: right;
+                padding: 0 15px 0 0;
+                width: 50%;
+            }
+        }
+
+        &_right {
+            order: 4;
+            text-align: right;
+
+            @media (min-width: 768px) and (max-width: 1140px) {
+                order: 5;
+                width: 50%;
+            }
+
+            @media (min-width: 576px) and (max-width: 767px) {
+                text-align: left;
+                padding: 0 0 0 15px;
+                width: 50%;
+            }
+        }
+
+        &Link {
+
+            @media (max-width: 575px) {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 1140px) {
+            margin: 30px 0 0;
+        }
+    }
+ 
+    &__search {
+        order: 5;
+
+        &Input {
+            border: 2px solid @text-green;
+            width: 100%;
+            border-radius: 6px;
+            padding: 7px 10px 7px 35px;
+            background: transparent url('../images/icons/icon-search.svg') no-repeat 0 0;
+            background-position: 10px center;
+            background-size: 15px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1140px) {
+            order: 3;
+            width: 45%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            
+            &Form {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}

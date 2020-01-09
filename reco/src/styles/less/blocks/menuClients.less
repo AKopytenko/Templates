@@ -1,0 +1,25 @@
+.menuClients {
+    padding: 5px 30px 0 0;
+
+    &__link {
+        text-transform: uppercase;
+        display: inline-block;
+        white-space: nowrap;
+        font-weight: 600;
+        line-height: 1;
+
+        & + a {
+            margin: 0 0 0 11px;
+            padding: 0 0 0 15px;
+            border-left: 2px solid @text-gray;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        padding: 5px 0 0;
+    }
+}

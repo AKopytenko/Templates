@@ -1,0 +1,50 @@
+.product {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    transition: .3s all;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    }
+
+    &__icon {
+        margin: 0 0 23px;
+    }
+
+    &__name {
+        display: block;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 600;
+        margin: 0 0 20px;
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        @media (max-width: 767px) { 
+            font-size: 26px;
+            line-height: 32px;
+            margin: 0 0 10px;
+        }
+    }
+
+    &__descr {
+        font-size: 24px;
+        line-height: 35px;
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        @media (max-width: 767px) { 
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+    }
+}

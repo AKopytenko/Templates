@@ -1,0 +1,46 @@
+@import '_variables.less';
+@import '_fonts.less';
+
+@import 'blocks/header.less';
+@import 'blocks/naviTop.less';
+@import 'blocks/carousel.less';
+@import 'blocks/mainProducts.less';
+@import 'blocks/icon.less';
+
+body {
+    min-width: 320px;
+    color: @text-gray;
+    font: 16px/22px 'BaseFont', sans-serif;
+}
+
+a {
+    color: @text-gray;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+h1 {
+    font: @h1;
+}
+
+h2 {
+    font: @h2;
+}
+
+h3 {
+    font: @h3;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.mainScreen-1 {
+    background: linear-gradient(180.49deg, rgba(214, 230, 246, 0.33) -58.47%, rgba(204, 224, 244, 0.17) 95.64%);
+}
+
+.mainScreen-3 {
+    background: linear-gradient(180deg, rgba(227, 231, 239, 0.8) 0%, rgba(244, 249, 255, 0.8) 100%);
+}

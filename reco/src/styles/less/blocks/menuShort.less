@@ -1,0 +1,36 @@
+.menuShort {
+    padding: 5px 0;
+    text-align: right;
+
+    &__link {
+        display: inline-block;
+        color: @text-light;
+        font-size: 17px;
+        line-height: 1;
+
+        & + a {
+            padding: 0 0 0 32px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+
+            & + a {
+                padding: 0 0 0 22px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding: 15px 0 0;
+        margin: 20px 0 0;
+        border-top: 1px dashed #ddd;
+        width: 100%;
+        text-align: left;
+
+        a,
+        & + a {
+            padding: 0 10px 0 0;
+        }
+    }
+}

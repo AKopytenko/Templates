@@ -1,0 +1,1 @@
+$(function(){$("#carouselMainpage").carousel()});
