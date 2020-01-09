@@ -1,4 +1,8 @@
-Адаптивный шаблон [Gulp, LESS, Bootstrap 4*, jQuery 3*]
+###Адаптивный шаблон
+* Gulp
+* LESS
+* Bootstrap 4
+* Query 3
 ---
 #### Установка зависимостей
 $ npm i
@@ -6,8 +10,7 @@ $ npm i
 $ gulp
 #### Сборка стилей
 $ gulp buildStyles
-
-Сборка скриптов
+#### Сборка скриптов
 $ gulp buildScripts
 
 Desktop
