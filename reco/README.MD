@@ -13,7 +13,8 @@ $ gulp
 $ gulp buildStyles
 #### Сборка скриптов
 $ gulp buildScripts
----
+
+
 Desktop
 ---
 ![](https://github.com/AKopytenko/Templates/blob/master/reco/preview-desktop.jpg)
