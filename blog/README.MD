@@ -1,5 +1,5 @@
 ## Адаптивный шаблон для блога, 9 разных секций.
----
+
 Что внутри:
 * Bootstrap 3
 * LESS
@@ -32,13 +32,18 @@
 
 #### Копировать картинки
     $ gulp copyImages
-===
+
+---
 Desktop
----
+
 ![](https://github.com/AKopytenko/Templates/blob/master/blog/preview-desktop.jpg)
+
+---
 Tablet
----
+
 ![](https://github.com/AKopytenko/Templates/blob/master/blog/preview-tablet.jpg)
-Mobile
+
 ---
+Mobile
+
 ![](https://github.com/AKopytenko/Templates/blob/master/blog/preview-mobile.jpg)
