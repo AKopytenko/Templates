@@ -16,23 +16,7 @@
     $ gulp buildStyles
 
 #### Сборка скриптов
-    $ gulp buildScripts
-
-#### Копировать HTML
-    $ gulp copyPages
-
-#### Копировать CSS-библиотеки
-    $ gulp copyLibCss
-
-#### Копировать JS-библиотеки
-    $ gulp copyLibJs
-
-#### Копировать шрифты
-    $ gulp copyFonts
-
-#### Копировать картинки
-    $ gulp copyImages
-
+    $ gulp buildScripts  
 ---
 Desktop
 
