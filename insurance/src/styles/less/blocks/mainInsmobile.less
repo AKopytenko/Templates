@@ -1,0 +1,54 @@
+.insMobile {
+    padding: 70px 0;
+    background-color: #edf1fa;
+
+    &__promo {
+        display: flex;
+        align-items: center;
+
+        &Image {
+            max-width: 100%;
+
+            @media (max-width: 575px) { 
+                display: none
+            }
+        }
+    }
+
+    &__descr {
+        display: flex;
+        align-items: center;
+
+        &Title {
+            font-size: 36px;
+            font-weight: 600;
+            position: relative;
+            padding: 0 0 25px;
+            margin: 0 0 20px;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 10%;
+                background: @bg-green;
+                content: "";
+            }
+        }
+
+        &Text {
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        &Links {
+            margin: 6vh -10px 0;
+        }
+
+        &Link {
+            display: inline-block;
+            margin: 0 10px 10px;
+        }
+    }
+}
