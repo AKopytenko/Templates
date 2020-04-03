@@ -8,11 +8,19 @@
         font-size: 18px;
         line-height: 50px;
         font-weight: 300;
+        border-bottom: 10px dashed #171f27;
+        transition: border .3s;
 
         &:after {
             width: 100%;
             display: block;
             content: "";
+        }
+
+        &:hover {
+            color: #ccc;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
         }
     }
 }
