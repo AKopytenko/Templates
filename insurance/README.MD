@@ -1,6 +1,9 @@
 ## Адаптивный шаблон для страховых компаний.
 
-Что внутри:
+#### DEMO  
+http://wr-team.ru/demo/insurance/
+
+#### Что внутри
 * Bootstrap 3
 * LESS
 * jQuery 3
